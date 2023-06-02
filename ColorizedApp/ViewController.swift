@@ -33,5 +33,14 @@ class ViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         colorizedView.backgroundColor = UIColor(red: redSliderCurrentValue, green: greenSliderCurrentValue, blue: blueSliderCurrentValue, alpha: 1)
     }
+    
+    @IBAction func redSliderAction() {
+    }
+    
+    @IBAction func greenSliderAction() {
+    }
+    
+    @IBAction func blueSliderAction() {
+    }
 }
 
