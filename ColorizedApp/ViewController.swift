@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     //MARK: - Private Properties
     private var redSliderCurrentValue = CGFloat(8 / 256)
-    private var greenSliderCurrentValue = CGFloat(0.5)
+    private var greenSliderCurrentValue = CGFloat(0.6)
     private var blueSliderCurrentValue = CGFloat(0.3)
     
     override func viewDidLoad() {
@@ -35,12 +35,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func redSliderAction() {
+        
     }
     
     @IBAction func greenSliderAction() {
+        
     }
     
     @IBAction func blueSliderAction() {
+        
     }
 }
 
