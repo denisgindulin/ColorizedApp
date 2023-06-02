@@ -22,23 +22,33 @@ class ViewController: UIViewController {
     @IBOutlet var blueSlider: UISlider!
     
     //MARK: - Private Properties
-    private var redSliderCurrentValue = CGFloat(8 / 256)
-    private var greenSliderCurrentValue = CGFloat(0.6)
-    private var blueSliderCurrentValue = CGFloat(0.3)
+    private var redSliderCurrentValue = CGFloat()
+    private var greenSliderCurrentValue = CGFloat()
+    private var blueSliderCurrentValue = CGFloat()
     
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupColorizedViewBorder()
+        
         setupRedSlider()
         setupRedValueLabel()
+        
         setupGreenSlider()
         setupGreenValueLabel()
+        
         setupBlueSlider()
         setupBlueValueLabel()
     }
     
     override func viewWillLayoutSubviews() {
-        colorizedView.backgroundColor = UIColor(red: CGFloat(redSliderCurrentValue), green: greenSliderCurrentValue, blue: blueSliderCurrentValue, alpha: 1)
+        colorizedView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1
+        )
     }
     
     //MARK: - IBActions
@@ -50,7 +60,6 @@ class ViewController: UIViewController {
     @IBAction func greenSliderAction() {
         greenSliderCurrentValue = CGFloat(greenSlider.value)
         setupGreenValueLabel()
-
     }
     
     @IBAction func blueSliderAction() {
@@ -59,28 +68,33 @@ class ViewController: UIViewController {
     }
     
     //MARK: - Private Methods
+    private func setupColorizedViewBorder() {
+        colorizedView.layer.borderColor = UIColor.gray.cgColor
+        colorizedView.layer.borderWidth = 2
+    }
+    
     private func setupRedSlider () {
-        redSlider.value = 200
+        redSlider.value = 0.5
     }
     
     private func setupRedValueLabel () {
-        redValueLabel.text = "красная: " + redSlider.value.formatted()
+        redValueLabel.text = "красная: " + Int(redSlider.value * 255).formatted()
     }
     
     private func setupGreenSlider () {
-        greenSlider.value = 180
+        greenSlider.value = 0.5
     }
     
     private func setupGreenValueLabel () {
-        greenValueLabel.text = "зеленая: " + greenSlider.value.formatted()
+        greenValueLabel.text = "зеленая: " + Int(greenSlider.value * 255).formatted()
     }
     
     private func setupBlueSlider () {
-        blueSlider.value = 120
+        blueSlider.value = 0.5
     }
     
     private func setupBlueValueLabel () {
-        blueValueLabel.text = "синяя: " + blueSlider.value.formatted()
+        blueValueLabel.text = "синяя: " + Int(blueSlider.value * 255).formatted()
     }
 }
 

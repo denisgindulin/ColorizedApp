@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -14,27 +14,28 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColorizedApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MtS-Nz-qXq">
-                                <rect key="frame" x="60" y="40" width="200" height="262.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MtS-Nz-qXq">
+                                <rect key="frame" x="80.666666666666657" y="79" width="268.66666666666674" height="354"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Получи свой цвет," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7e-Vp-tpM">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="268.66666666666669" height="26.333333333333332"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="смешивая краски." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Z7-jh-UAX">
-                                        <rect key="frame" x="0.0" y="26.5" width="200" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="36.333333333333329" width="268.66666666666669" height="26.333333333333329"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNf-cO-oHJ">
-                                        <rect key="frame" x="0.0" y="53" width="200" height="209.5"/>
-                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <rect key="frame" x="0.0" y="72.666666666666657" width="268.66666666666669" height="281.33333333333337"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="tintColor" systemColor="systemTealColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="aNf-cO-oHJ" secondAttribute="height" multiplier="234:245" id="TCf-nb-PlX"/>
                                         </constraints>
@@ -42,16 +43,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="U9G-1G-m44">
-                                <rect key="frame" x="35" y="338.5" width="250" height="209.5"/>
+                                <rect key="frame" x="47" y="557.33333333333337" width="336" height="320.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNM-Zb-WSS">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="28.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="336" height="46.666666666666664"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="textColor" systemColor="systemPinkColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="127" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="G98-w1-dwv">
-                                        <rect key="frame" x="-2" y="36.5" width="254" height="29"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="G98-w1-dwv">
+                                        <rect key="frame" x="-2" y="54.666666666666629" width="340" height="48"/>
                                         <imageReference key="minimumValueImage" image="paintbrush" catalog="system" symbolScale="small" renderingMode="hierarchical">
                                             <hierarchicalColors>
                                                 <color systemColor="systemRedColor"/>
@@ -59,7 +60,7 @@
                                                 <color systemColor="tertiaryLabelColor"/>
                                             </hierarchicalColors>
                                         </imageReference>
-                                        <imageReference key="maximumValueImage" image="paintbrush.fill" catalog="system" symbolScale="medium" renderingMode="hierarchical">
+                                        <imageReference key="maximumValueImage" image="paintbrush.fill" catalog="system" symbolScale="large" renderingMode="hierarchical">
                                             <hierarchicalColors>
                                                 <color systemColor="systemRedColor"/>
                                                 <color systemColor="secondaryLabelColor"/>
@@ -72,13 +73,13 @@
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV1-Y1-Ffz">
-                                        <rect key="frame" x="0.0" y="72.5" width="250" height="28.5"/>
+                                        <rect key="frame" x="0.0" y="109.66666666666664" width="336" height="46.666666666666671"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="textColor" systemColor="systemGreenColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="127" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="W6B-PG-S9Y">
-                                        <rect key="frame" x="-2" y="109" width="254" height="29"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="W6B-PG-S9Y">
+                                        <rect key="frame" x="-2" y="164.33333333333326" width="340" height="47.666666666666657"/>
                                         <imageReference key="minimumValueImage" image="paintbrush" catalog="system" symbolScale="small" renderingMode="hierarchical">
                                             <hierarchicalColors>
                                                 <color systemColor="systemGreenColor"/>
@@ -86,7 +87,7 @@
                                                 <color systemColor="tertiaryLabelColor"/>
                                             </hierarchicalColors>
                                         </imageReference>
-                                        <imageReference key="maximumValueImage" image="paintbrush.fill" catalog="system" symbolScale="medium" renderingMode="hierarchical">
+                                        <imageReference key="maximumValueImage" image="paintbrush.fill" catalog="system" symbolScale="large" renderingMode="hierarchical">
                                             <hierarchicalColors>
                                                 <color systemColor="systemGreenColor"/>
                                                 <color systemColor="secondaryLabelColor"/>
@@ -99,13 +100,13 @@
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWN-VA-5wL">
-                                        <rect key="frame" x="0.0" y="145" width="250" height="28.5"/>
+                                        <rect key="frame" x="0.0" y="219" width="336" height="47"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="textColor" systemColor="systemBlueColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="127" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="yQe-uW-mQj">
-                                        <rect key="frame" x="-2" y="181.5" width="254" height="29"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yQe-uW-mQj">
+                                        <rect key="frame" x="-2" y="274" width="340" height="47.666666666666686"/>
                                         <imageReference key="minimumValueImage" image="paintbrush" catalog="system" symbolScale="small" renderingMode="hierarchical">
                                             <hierarchicalColors>
                                                 <color systemColor="systemBlueColor"/>
@@ -113,7 +114,7 @@
                                                 <color systemColor="tertiaryLabelColor"/>
                                             </hierarchicalColors>
                                         </imageReference>
-                                        <imageReference key="maximumValueImage" image="paintbrush.fill" catalog="system" symbolScale="medium" renderingMode="hierarchical">
+                                        <imageReference key="maximumValueImage" image="paintbrush.fill" catalog="system" symbolScale="large" renderingMode="hierarchical">
                                             <hierarchicalColors>
                                                 <color systemColor="systemBlueColor"/>
                                                 <color systemColor="secondaryLabelColor"/>
@@ -166,17 +167,20 @@
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
