@@ -21,9 +21,17 @@ class ViewController: UIViewController {
     @IBOutlet var blueValueLabel: UILabel!
     @IBOutlet var blueSlider: UISlider!
     
+    //MARK: - Private Properties
+    private var redSliderCurrentValue = CGFloat(8 / 256)
+    private var greenSliderCurrentValue = CGFloat(0.5)
+    private var blueSliderCurrentValue = CGFloat(0.3)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    override func viewWillLayoutSubviews() {
+        colorizedView.backgroundColor = UIColor(red: redSliderCurrentValue, green: greenSliderCurrentValue, blue: blueSliderCurrentValue, alpha: 1)
+    }
 }
 

@@ -34,7 +34,7 @@
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNf-cO-oHJ">
                                         <rect key="frame" x="0.0" y="53" width="200" height="209.5"/>
-                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="aNf-cO-oHJ" secondAttribute="height" multiplier="234:245" id="TCf-nb-PlX"/>
                                         </constraints>
@@ -50,7 +50,7 @@
                                         <color key="textColor" systemColor="systemPinkColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="G98-w1-dwv">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="127" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="G98-w1-dwv">
                                         <rect key="frame" x="-2" y="36.5" width="254" height="29"/>
                                         <imageReference key="minimumValueImage" image="paintbrush" catalog="system" symbolScale="small" renderingMode="hierarchical">
                                             <hierarchicalColors>
@@ -74,7 +74,7 @@
                                         <color key="textColor" systemColor="systemGreenColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="W6B-PG-S9Y">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="127" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="W6B-PG-S9Y">
                                         <rect key="frame" x="-2" y="109" width="254" height="29"/>
                                         <imageReference key="minimumValueImage" image="paintbrush" catalog="system" symbolScale="small" renderingMode="hierarchical">
                                             <hierarchicalColors>
@@ -98,7 +98,7 @@
                                         <color key="textColor" systemColor="systemBlueColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yQe-uW-mQj">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="127" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="yQe-uW-mQj">
                                         <rect key="frame" x="-2" y="181.5" width="254" height="29"/>
                                         <imageReference key="minimumValueImage" image="paintbrush" catalog="system" symbolScale="small" renderingMode="hierarchical">
                                             <hierarchicalColors>
@@ -159,6 +159,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
