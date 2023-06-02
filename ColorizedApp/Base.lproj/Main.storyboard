@@ -130,6 +130,15 @@
                             <constraint firstItem="U9G-1G-m44" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.78125" id="wyS-Dz-pLu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueSlider" destination="yQe-uW-mQj" id="zbo-BA-xgs"/>
+                        <outlet property="blueValueLabel" destination="RWN-VA-5wL" id="sVi-cL-Xa4"/>
+                        <outlet property="colorizedView" destination="aNf-cO-oHJ" id="EnL-eE-SaD"/>
+                        <outlet property="greenSlider" destination="W6B-PG-S9Y" id="wy6-7s-obQ"/>
+                        <outlet property="greenValueLabel" destination="cV1-Y1-Ffz" id="gvf-Ks-0hr"/>
+                        <outlet property="redSlider" destination="G98-w1-dwv" id="Rtv-x7-2nS"/>
+                        <outlet property="redValueLabel" destination="iNM-Zb-WSS" id="tXx-t9-lPU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
