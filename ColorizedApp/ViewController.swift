@@ -28,22 +28,55 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupRedSlider()
+        setupRedValueLabel()
+        setupGreenSlider()
+        setupGreenValueLabel()
+        setupBlueSlider()
+        setupBlueValueLabel()
     }
     
     override func viewWillLayoutSubviews() {
-        colorizedView.backgroundColor = UIColor(red: redSliderCurrentValue, green: greenSliderCurrentValue, blue: blueSliderCurrentValue, alpha: 1)
+        colorizedView.backgroundColor = UIColor(red: CGFloat(redSliderCurrentValue), green: greenSliderCurrentValue, blue: blueSliderCurrentValue, alpha: 1)
     }
     
     @IBAction func redSliderAction() {
+        redSliderCurrentValue = CGFloat(redSlider.value)
         
     }
     
     @IBAction func greenSliderAction() {
-        
+        greenSliderCurrentValue = CGFloat(greenSlider.value)
+
     }
     
     @IBAction func blueSliderAction() {
-        
+        blueSliderCurrentValue = CGFloat(blueSlider.value)
+    }
+    
+    //MARK: - Private Methods
+    private func setupRedSlider () {
+        redSlider.value = 200
+    }
+    
+    private func setupRedValueLabel () {
+        redValueLabel.text = "красная: " + redSlider.value.formatted()
+    }
+    
+    private func setupGreenSlider () {
+        greenSlider.value = 180
+    }
+    
+    private func setupGreenValueLabel () {
+        greenValueLabel.text = "зеленая: " + greenSlider.value.formatted()
+    }
+    
+    private func setupBlueSlider () {
+        blueSlider.value = 120
+    }
+    
+    private func setupBlueValueLabel () {
+        blueValueLabel.text = "синяя: " + blueSlider.value.formatted()
     }
 }
 
