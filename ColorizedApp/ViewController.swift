@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     private var greenSliderCurrentValue = CGFloat(0.6)
     private var blueSliderCurrentValue = CGFloat(0.3)
     
+    //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setupRedSlider()
@@ -40,18 +41,21 @@ class ViewController: UIViewController {
         colorizedView.backgroundColor = UIColor(red: CGFloat(redSliderCurrentValue), green: greenSliderCurrentValue, blue: blueSliderCurrentValue, alpha: 1)
     }
     
+    //MARK: - IBActions
     @IBAction func redSliderAction() {
         redSliderCurrentValue = CGFloat(redSlider.value)
-        
+        setupRedValueLabel()
     }
     
     @IBAction func greenSliderAction() {
         greenSliderCurrentValue = CGFloat(greenSlider.value)
+        setupGreenValueLabel()
 
     }
     
     @IBAction func blueSliderAction() {
         blueSliderCurrentValue = CGFloat(blueSlider.value)
+        setupBlueValueLabel()
     }
     
     //MARK: - Private Methods
